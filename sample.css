@@ -1,49 +1,14 @@
 body{
     margin: 0;
+    padding: 0;
     font-family: 'Poppins', sans-serif;
-}
-.header{
-    background-color: rgba(37, 36, 35, 0.932);
-    overflow: hidden;
-}
-
-.header a{
-    color: white;
-    float: left;
-    text-align: center;
-    padding: 12px;
-    border-radius: 4px;
-    font-size: 15px;
-    line-height: 25px;
-    text-decoration: none;
-}
-
-.nav-tabs{
-    float: right;
-}
-
-.header a.logo{
-    font-size: 25px;
-    font-weight: bold;
-    color: white;
-}
-
-.nav-tabs a:hover{
-    background-color: black;
-    color: white;
-}
-
-.active{
-    background-color:dodgerblue;
-    color: white;
 }
 
 .container1{
     position: absolute;
-    margin-top: 20px;
     max-width: 300px;
-    padding: 300px 500px;
-    background-color:rgba(37, 36, 35, 0.932);
+    padding: 25% 35%;
+    background-color: darkgray;
     color: white;
 }
 
@@ -68,3 +33,4 @@ body{
     background-color:rgba(37, 36, 35, 0.932);
     color: white;
 }
+
