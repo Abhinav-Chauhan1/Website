@@ -1,6 +1,9 @@
 .header{
-    background-color: rgba(37, 36, 35, 0.932);
+    background-color: rgb(144 128 215 / 93%);
     overflow: hidden;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
 }
 
 .header a{
@@ -29,7 +32,3 @@
     color: white;
 }
 
-.active{
-    background-color:dodgerblue;
-    color: white;
-}

@@ -1,0 +1,126 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(230, 210, 235);
+}
+
+.bigcontainer{
+    position: absolute;
+    width: 1100px;
+    height: 1024px;
+    background-image: url(Pics/1.jpg);
+    background-size: cover;
+    text-align: left;
+    display: inline-block;
+    box-sizing: border-box;
+    margin-top: 49px;
+}
+
+
+.bigcontainer h3{
+    margin: 20px;
+    font-size: 55px;
+    color: white;
+    font-weight: bolder;
+    padding: 25px;
+    text-decoration: none;
+}
+
+.container{
+    position: absolute;
+    background-color: lightgray;
+    border: 3px solid black;
+    right: 50px;
+    width: 300px;
+    height: 400px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.pic{
+    width: 295px;
+    height: 250px;
+    background-size: cover;
+}
+
+#first{
+    margin-top: 119px;
+}
+
+#firstpic{
+    background-image: url(pics/2.jpg);
+}
+
+#secondpic{
+    background-image: url(pics/3.jpg);
+}
+
+#second{
+    margin-top: 529px;
+}
+
+.courseheading h3{
+    float: right;
+    margin-right: 150px;
+    margin-top: 70px;
+}
+
+.showall a:hover{
+    background-color: black;
+    color: blanchedalmond;
+}
+
+.showall a{
+    position: absolute;
+    right: 0;
+    margin-top: 973px;
+    background-color: rgb(224, 120, 141);
+    padding: 0px 179px;
+    line-height: 100px;
+    text-decoration: none;
+    color: black;
+}
+
+.pictext{
+    padding: 20px 25px;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.joinbutton{
+    background-color: rgb(91, 69, 170);
+    margin: 30px;
+    padding: 10px 100px;
+    text-decoration: none;
+    color: white;
+}
+
+.joinbutton:hover{
+    color: white;
+    background-color: black;
+}
+
+/* Section 2 */
+
+.heading{
+    position: absolute;
+    top: 150%;
+    padding: 30px 150px;
+}
+
+.heading a{
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 20px;
+    color: black;
+}
+
+.trainer{
+    float: right;
+    margin: 60px;
+    padding: 15px;
+    width: 450px;
+    height: 600px;
+    background-color: black;
+}
