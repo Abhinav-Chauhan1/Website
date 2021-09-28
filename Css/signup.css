@@ -1,5 +1,5 @@
-input[type=text], input[type=password], input[type=date] {
-  width: 60%;
+input[type=text], input[type=password], input[type=date] , select{
+  width: 80%;
   padding: 15px;
   margin: 5px 0 22px 0;
   display: block;
@@ -39,14 +39,14 @@ button:hover {
 /* Float cancel and signup buttons and add an equal width */
 .cancelbtn, .signupbtn {
   position: relative;
- left: 10%;
-  width: 20%;
+  left: 2%;
+  width: 40%;
 }
 
 /* Add padding to container elements */
 .containersignup {
   position: relative;
-  left: 20%;
+  left: 8%;
   padding: 16px;
 }
 

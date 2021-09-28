@@ -30,7 +30,8 @@
                 <a href="about us.html" class="nav1"><i class="fa fa-id-badge" aria-hidden="true"></i> About us</a>
                 <a href="services.html" class="nav1"><i class="fa fa-globe"></i> Services</a>
                 <a href="contact.html" class="nav1"><i class="fa fa-fw fa-envelope"></i> Contact</a>
-                <a class="nav1" onclick="document.getElementById('id01').style.display='block'"><i class="fa fa-fw fa-user"></i> Signup</a>
+                <a class="nav1" onclick="document.getElementById('id01').style.display='block'"><i
+                        class="fa fa-fw fa-user"></i> Signup</a>
             </div>
         </div>
     </header>
@@ -44,7 +45,7 @@
         <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
         <a href="#" class="google"><i class="fa fa-google"></i></a>
         <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-      </div>
+    </div>
 
     <!-- Sidebar Ends Here -->
 
@@ -68,6 +69,13 @@
 
                         <label for="lname"><b>Last Name</b></label>
                         <input type="text" placeholder="Enter Name" name="lname" required>
+
+                        <label for="gender"><b>Gender</b></label>
+                        <select id="gender" name="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
 
                         <label for="email"><b>Email</b></label>
                         <input type="text" placeholder="Enter Email" name="email" required>
@@ -156,11 +164,15 @@
                 <h2>READY FOR<br>THE ULTIMATE CHALLENGE?<br></h2>
                 For any questions about our program fill out the form below and we’ll be sure to get back to you.
             </div>
-            <form>
-                <label for="fname">First Name</label>
+            <form action="mailto:abhinavchauhancode@gmail.com" method="post" enctype="text/plain">
+                <label for="fname">Name</label>
                 <input type="text" class="f1" name="First Name" id="fname">
-                <label for="lname">Last Name</label>
-                <input type="text" class="f1" name="Last name" id="lname">
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender" class="f1">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
                 <label for="email">Email</label>
                 <input type="email" class="f1" name="email" id="email">
                 <label for="message">Leave us a message</label>
