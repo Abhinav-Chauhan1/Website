@@ -5,14 +5,18 @@ body{
     background-color: rgb(230, 210, 235);
 }
 
+.sidecontainer{
+    display: flex;
+}
+
 .bigcontainer{
     position: absolute;
-    width: 1100px;
+    width: 72.4%;
     height: 1024px;
     background-image: url(Pics/1.jpg);
     background-size: cover;
     text-align: left;
-    display: inline-block;
+    display: flex;
     box-sizing: border-box;
     margin-top: 49px;
 }
@@ -27,15 +31,36 @@ body{
     text-decoration: none;
 }
 
+.butn{
+    position: absolute;
+    background-color: rgb(91, 69, 170);
+    margin-left: 5%;
+    margin-top: 18%;
+    padding: 15px 75px;
+    height: 8%;
+    font-size: 20px;
+    width: 25%;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: white;
+    border-radius: 50px;
+}
+
+.butn:hover{
+    background-color: black;
+}
+
 .container{
     position: absolute;
     background-color: lightgray;
     border: 3px solid black;
     right: 50px;
-    width: 300px;
+    max-width: 300px;
     height: 400px;
     box-sizing: border-box;
-    display: inline-block;
+    display: flexbox;
+    text-align: center;
+    box-shadow: 10px 10px 5px grey;
 }
 
 .pic{
@@ -45,7 +70,7 @@ body{
 }
 
 #first{
-    margin-top: 119px;
+    margin-top: 138px;
 }
 
 #firstpic{
@@ -57,14 +82,20 @@ body{
 }
 
 #second{
-    margin-top: 529px;
+    margin-top: 549px;
 }
 
-.courseheading h3{
+.courseheading{
     float: right;
-    margin-right: 150px;
+    display: block;
+    text-align: center;
+}
+
+.courseheading h2{
+    margin-right: 80px;
     margin-top: 70px;
 }
+
 
 .showall a:hover{
     background-color: black;
@@ -84,7 +115,7 @@ body{
 
 .pictext{
     padding: 20px 25px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bolder;
 }
 
@@ -94,6 +125,7 @@ body{
     padding: 10px 100px;
     text-decoration: none;
     color: white;
+    border-radius: 50px;
 }
 
 .joinbutton:hover{
@@ -105,14 +137,14 @@ body{
 
 .heading{
     position: absolute;
-    top: 150%;
+    top: 160%;
     padding: 30px 150px;
 }
 
 .heading a{
     text-decoration: none;
     font-weight: bolder;
-    font-size: 20px;
+    font-size: 35px;
     color: black;
 }
 
@@ -122,5 +154,107 @@ body{
     padding: 15px;
     width: 450px;
     height: 600px;
+    background-size: cover;
+    box-shadow: 10px 10px 5px grey;
+}
+
+#trainerfirst{
+    background-image: url(pics/T1.jpg);
+}
+
+
+#trainersecond{
+    background-image: url(pics/T2.jpg);
+}
+
+/* Section 3 */
+
+.contactform{
+    position: absolute;
+    top: 290%;
+    margin-left: 10%;
+    max-width: 80%;
+    height: 80%;
+    background-color: rgb(235, 174, 117);
+    border-radius: 25px;
+    box-shadow: 10px 10px 5px grey;
+}
+
+form{
+    position: relative;
+    float: right;
+    box-sizing: border-box; 
+    border-radius: 5px;
+    background-color: #f3c6ed;
+    padding: 10px 12px;
+    margin: 60px 20px;
+    max-width: 50%;
+    border-radius: 15px;
+}
+
+input[type=text].f1{
+    width: 100%; 
+    padding: 12px 10px;  
+    margin: 3px;
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    resize: vertical
+}
+
+textarea.f1{
+    width: 100%; 
+    padding: 12px 10px;  
+    margin: 5px;
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    resize: vertical
+}
+
+input[type=email].f1{
+    width: 100%; 
+    padding: 12px 10px;  
+    margin: 3px;
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    resize: vertical
+}
+
+textarea{
+    max-height: 140px;
+}
+
+.formleft{
+    width: 40%;
+    height: 60%;
+    box-sizing: border-box; 
+    margin-top: 8%;
+    margin-left: 4%;
+    float: left;
+    font-size: 25px;
+}
+
+label{
+    padding: 8px;
+}
+
+input[type=submit].f1 {
+    background-color: rgb(91, 69, 170);
+    color: white;
+    padding: 12px 20px;
+    margin: 10px 45%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+
+input[type=submit]:hover.f1 {
     background-color: black;
+  }
+
+#message{
+    height: 150px;   
 }

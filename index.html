@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="CSS/homepage.css">
     <link rel="stylesheet" href="Css/header.css">
     <link rel="stylesheet" href="Css/footer.css">
+    <link rel="stylesheet" href="Css/signup.css">
+    <link rel="stylesheet" href="Css/sidebar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
@@ -22,59 +25,152 @@
 
     <header>
         <div class="header">
-            <a href="#" class="logo">Fitness</a>
+            <a href="index.html" class="logo"><i class="fa fa-superpowers" aria-hidden="true"></i> FITWELL</a>
             <div class="nav-tabs">
-                <a href="#" class="#">Home</a>
-                <a href="#" class="#">About us</a>
-                <a href="#" class="#">Services</a>
-                <a href="#" class="#">Contact</a>
+                <a href="about us.html" class="nav1"><i class="fa fa-id-badge" aria-hidden="true"></i> About us</a>
+                <a href="services.html" class="nav1"><i class="fa fa-globe"></i> Services</a>
+                <a href="contact.html" class="nav1"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+                <a class="nav1" onclick="document.getElementById('id01').style.display='block'"><i class="fa fa-fw fa-user"></i> Signup</a>
             </div>
         </div>
     </header>
 
-    <!--Header End Here-->
+    <!-- Header Ends Here -->
+
+    <!-- Sidebar Starts Here -->
+
+    <div class="icon-bar">
+        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+        <a href="#" class="google"><i class="fa fa-google"></i></a>
+        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+      </div>
+
+    <!-- Sidebar Ends Here -->
+
+    <!-- Signup Starts Here -->
+
+    <signup>
+        <div id="id01" class="modal">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                title="Close Modal">&times;</span>
+            <form class="modal-content" action="/action_page.php">
+                <div class="containersignup">
+                    <h1>Sign Up</h1>
+                    <h2>Already a member?<a href="#" onclick="document.getElementById('id02').style.display='block'"
+                            style="width:auto;">Log In</a></h2>
+                    <p>Please fill in this form to create an account.</p>
+
+                    <div class="cont">
+
+                        <label for="fname"><b>First Name</b></label>
+                        <input type="text" placeholder="Enter Name" name="fname" required>
+
+                        <label for="lname"><b>Last Name</b></label>
+                        <input type="text" placeholder="Enter Name" name="lname" required>
+
+                        <label for="email"><b>Email</b></label>
+                        <input type="text" placeholder="Enter Email" name="email" required>
+
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+
+                        <label for="dob"><b>Date of Birth</b>(13+ age required)</label>
+                        <input type="date" min="1960-09-27" max="2008-09-27" name="dob" required>
+
+                        <label>
+                            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">
+                            Remember me
+                        </label>
+
+                        <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms &
+                                Privacy</a>.
+                        </p>
+                    </div>
+
+                    <div class="clearfix">
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                            class="cancelbtn">Cancel</button>
+                        <button type="submit" class="signupbtn">Sign Up</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </signup>
+
+    <!--Signup End Here-->
 
     <!-- Section-1 Start Here -->
+
     <div class="section1">
         <div class="bigcontainer">
-                <h3>NO LIMITS,<br>
-                    JUST RESULTS.</h3>
+            <h3>NO LIMITS,<br>
+                JUST RESULTS.</h3>
+            <a href="challenges.html" class="butn">
+                View Challenges
+            </a>
         </div>
         <div class="courseheading">
-            <h3>Challenges</h3>
+            <h2>FITWELL FEATURED
+                <br>CHALLENGES
+            </h2>
         </div>
         <div class="container" id="first">
             <div class="pic" id="firstpic"></div>
             <div class="pictext" id="firsttext">
-                Challenge<br>Time
+                Freestyle Challenge<br>1 Week
             </div>
-            <a href="#" class="joinbutton">Join</a>
+            <a href="challenges.html" class="joinbutton">View</a>
         </div>
         <div class="container" id="second">
             <div class="pic" id="secondpic"></div>
             <div class="pictext" id="secondtext">
-                Challenge<br>Time
+                Strength Challenge<br>3 Week
             </div>
-            <a href="#" class="joinbutton">Join</a>
+            <a href="challenges.html" class="joinbutton">View</a>
         </div>
         <div class="showall">
-            <a href="#">Show All</a>
+            <a href="challenges.html">Show All</a>
         </div>
     </div>
 
-   <!-- Section-1 End Here -->
+    <!-- Section-1 End Here -->
 
-   <!-- Section-2 Start Here -->
+    <!-- Section-2 Start Here -->
 
-   <div class="section2">
-    <div class="heading">
-        <a href="#">THE TRAINERS</a>
-        <p>I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you.</p>
-        <div class="trainer" id="trainerfirst">
+    <div class="section2">
+        <div class="heading">
+            <a href="#">THE TRAINERS</a>
+            <p>Your body can stand almost anything. It’s your mind that you have to convince.</p>
+            <div class="trainer" id="trainerfirst">
+            </div>
+            <div class="trainer" id="trainersecond"></div>
         </div>
-        <div class="trainer" id="trainersecond"></div>
     </div>
-   </div>
+
+    <!-- Section-3 Start Here -->
+
+    <div class="section3">
+        <div class="contactform">
+            <div class="formleft">
+                <h2>READY FOR<br>THE ULTIMATE CHALLENGE?<br></h2>
+                For any questions about our program fill out the form below and we’ll be sure to get back to you.
+            </div>
+            <form>
+                <label for="fname">First Name</label>
+                <input type="text" class="f1" name="First Name" id="fname">
+                <label for="lname">Last Name</label>
+                <input type="text" class="f1" name="Last name" id="lname">
+                <label for="email">Email</label>
+                <input type="email" class="f1" name="email" id="email">
+                <label for="message">Leave us a message</label>
+                <textarea class="f1" name="message" id="message"></textarea>
+                <input type="submit" class="f1" value="Submit">
+            </form>
+        </div>
+    </div>
+
+    <!-- Section-3 Ends Here -->
 
     <!-- Footer Start Here -->
     <footer>
@@ -82,23 +178,26 @@
             <div class="fot-left">
                 <a href="#" class="name">Fitness</a>
                 <div class="fot-links">
-                    <a href="#" class="#">Home</a>
-                    <a href="#" class="#">About us</a>
-                    <a href="#" class="#">Services</a>
-                    <a href="#" class="#">Contact</a>
+                    <a href="index.html" class="#">Home</a>
+                    <a href="about us.html" class="#">About us</a>
+                    <a href="services.html" class="#">Services</a>
+                    <a href="contact.html" class="#">Contact</a>
                 </div>
             </div>
 
             <div class="fot-right">
                 <a href="#" class="#">About Company</a>
-                <div class="company-text">Some text about company... <br>Some text about company...</a>
+                <div class="company-text">We welcome you to become a part of this <br>fitness revolution.</a>
                 </div>
             </div>
     </footer>
+
     <!-- Footer End Here -->
+
 </body>
 
 <!--JS -->
-<script src="sample.js"></script>
+
+<script src="signup.js"></script>
 
 </html>

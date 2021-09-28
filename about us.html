@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+<link rel="stylesheet" href="Css/header.css">
+<link rel="stylesheet" href="Css/footer.css">
+</head>
+<body>
+
+  <header>
+    <div class="header">
+        <a href="index.html" class="logo"><i class="fa fa-superpowers" aria-hidden="true"></i> FITWELL</a>
+        <div class="nav-tabs">
+            <a href="index.html" class="nav1"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+            <a href="about us.html" class="nav1"><i class="fa fa-id-badge" aria-hidden="true"></i> About us</a>
+            <a href="services.html" class="nav1"><i class="fa fa-globe"></i> Services</a>
+            <a href="contact.html" class="nav1"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+            <!-- <a class="nav1" onclick="document.getElementById('id01').style.display='block'"><i
+                    class="fa fa-fw fa-user"></i> Signup</a> -->
+        </div>
+    </div>
+</header>
+
+<div class="about-section">
+  <h1>About Us Page</h1>
+  <p>Our website serves as a one-stop solution for all health & fitness guidance and related needs. Through its freemium model, Our website offers free access to a host of industry-standard diet & training tools, a number of other cutting-edge features, and a community of fitness experts & enthusiasts. Users can get personalised guidance, customised plans & weekly follow-ups </p>
+  <h2> </p>We welcome you to become a part of this fitness revolution.</p> </h2>
+</div>
+<h1 style="text-align:center">Our Vision</h1>
+<h3 style="padding: 20px;"><P>MaxStrength Fitness will profoundly improve the quality of life for by educating, inspiring and providing the most efficient, effective and safe exercise program and nutrition life-style system ever created. Our employees will be life changers and will have extensive growth opportunities while fulfilling their passion and servicing their clients.</P></h3>
+
+<h1 style="text-align:center">MEET OUR TEAM</h1>
+<h4 style="text-align:center"> </h4>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="aboutus_Pics\bhavnesh1.jpeg" alt="Bhavnesh" style="width: 45%">
+      <div class="container">
+        <h2>Bhavnesh Kumar Jha</h2>
+        <p class="title">Student</p>
+        <p>Amity University </p>
+        <p><a href="mailto:princejhakumar@gmail.com"target="_blank">princejhakumar@gmail.com</a></p>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="aboutus_Pics\richa.jpeg" alt="Richa" style="width:60%">
+      <div class="container">
+        <h2>Richa Jha</h2>
+        <p class="title">Student</p>
+        <p>Amity University</p>
+        <p><a href="mailto:rjha43954@gmail.com" target="_blank">rjha43954@gmail.com</a></p>
+      
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="aboutus_Pics\abhinav singh.jpeg" alt="Abhinav singh" style="width:35%">
+      <div class="container">
+        <h2>Abhinav Singh</h2>
+        <p class="title">Student</p>
+        <p>Amity university</p>
+        <p><a href="mailto:abhinav787@gmail.com" target="_blank">abhinav787@gmail.com</a></p>
+        
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="aboutus_Pics\abhinav.jpeg" alt="Abhinav chauhan" style="width:50%">
+      <div class="container">
+        <h2>Abhinav Chauhan</h2>
+        <p class="title">Student</p>
+        <p>Amity University</p>
+        <p><a href="mailto:abhinavchauhancode@gmail.com" target="_blank">abhinavchauhancode@gmail.com</a></p>
+        
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="aboutus_Pics\virat.jpeg" alt="Virat" style="width:65%">
+      <div class="container">
+        <h2>Virat Raj</h2>
+        <p class="title">Student</p>
+        <p>Amity University</p>
+        <p><a href="mailto:virat667@gmail.com" target="_blank">virat667@gmail.com</a></p>
+        
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="aboutus_Pics\Devansh.jpeg" alt="devansh" style="width:50%">
+      <div class="container">
+        <h2>Devansh Verma</h2>
+        <p class="title">Student</p>
+        <p>Amity University </p>
+        <p><a href="mailto:devansh.verma1@s.amity.edu" target="_blank">devansh.verma1@s.amity.edu</a></p>
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer" style="top: 220%">
+      <div class="fot-left">
+          <a href="#" class="name">Fitness</a>
+          <div class="fot-links">
+              <a href="index.html" class="#">Home</a>
+              <a href="about us.html" class="#">About us</a>
+              <a href="services.html" class="#">Services</a>
+              <a href="contact.html" class="#">Contact</a>
+          </div>
+      </div>
+
+      <div class="fot-right">
+          <a href="#" class="#">About Company</a>
+          <div class="company-text">We welcome you to become a part of this <br>fitness revolution.</a>
+          </div>
+      </div>
+</footer>
+
+</body>
+</html>
